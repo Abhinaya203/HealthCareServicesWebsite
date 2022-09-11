@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Health Care Services</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;600;700&family=Roboto:wght@900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <link
+      rel="stylesheet"
+      href=" https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <div class="top">
+      <div>
+        Contact Us +91 96366 20000/+91 63120 20000 | healthcare@service.com
+      </div>
+    </div>
+    <section class="header4">
+      <nav>
+        <h2 style="color: rgb(6, 5, 5)">HealthCareServices</h2>
+        <div class="nav-links" id="navLinks">
+          <i class="fa fa-times" onclick="hideMenu()"></i>
+          <ul>
+            <li>
+              <a href="index.html"><b>HOME</b></a>
+            </li>
+            <li>
+              <a href="about.html"><b>ABOUT US</b></a>
+            </li>
+            <li>
+              <a href="service.html"><b>SERVICES</b></a>
+            </li>
+            <li>
+              <a href="donations.html"><b>DONATIONS</b></a>
+            </li>
+            <li>
+              <a href="contact.html"><b>CONTACT US</b></a>
+            </li>
+
+            <li>
+              <a href="register.html"><b>REGISTER</b></a>
+            </li>
+            <li>
+              <a href="feedback.html"><b>FEEDBACK</b></a>
+            </li>
+          </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+      </nav>
+      <div class="text-box">
+        <i class="fa-solid fa-lungs"></i>
+
+        <br />
+        <br />
+      </div>
+      <div class="wrap1">
+        <div class="wrapper">
+          <div class="inner">
+            <div class="image-holder">
+              <img src="image/img11.png" alt="image" />
+            </div>
+            <form>
+              <h3>Login form</h3>
+
+              <div class="form-wrapper">
+                <input
+                  type="text"
+                  placeholder="Username"
+                  class="form-control"
+                />
+              </div>
+
+              <div class="form-wrapper">
+                <input
+                  type="password"
+                  placeholder="Password"
+                  class="form-control"
+                />
+              </div>
+
+              <button>submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script>
+      var navLinks = document.getElementById("navLinks");
+      function showMenu() {
+        navLinks.style.right = "0";
+      }
+      function hideMenu() {
+        navLinks.style.right = "-200px";
+      }
+    </script>
+  </body>
+</html>

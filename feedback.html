@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health Care Services</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;600;700&family=Roboto:wght@900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+   
+    <link rel="stylesheet" href=" https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="top">
+        <div>
+          Contact Us +91 96366 20000/+91 63120 20000 | healthcare@service.com
+        </div>
+      </div>
+    <section class="header3">
+      <nav>
+        <h1 style="color: rgb(8, 4, 4)">HealthCareServices</h1>
+        <div class="nav-links" id="navLinks">
+          <i class="fa fa-times"  onclick="hideMenu()"></i>
+          <ul>
+            <li>
+                <a href="index.html"><b>HOME</b></a>
+              </li>
+              <li>
+                <a href="about.html"><b>ABOUT US</b></a>
+              </li>
+              <li>
+                <a href="service.html"><b>SERVICES</b></a>
+              </li>
+              <li>
+                <a href="donations.html"><b>DONATIONS</b></a>
+              </li>
+              <li>
+                <a href="contact.html"><b>CONTACT US</b></a>
+              </li>
+  
+              <li>
+                <a href="register.html"><b>REGISTER</b></a>
+              </li>
+              <li>
+                <a href="feedback.html"><b>FEEDBACK</b></a>
+              </li>
+          </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()" ></i>
+      </nav>
+      <div class="text-box">
+        <i class="fa-solid fa-lungs"></i>
+        
+        <br/>
+        <br/>
+      
+      </div>
+      <div class="wrap3">
+        <div class="wrapper3">
+            <div class="inner3">
+                <div class="image-holder3">
+                   <img src="image/feedback.png"> 
+                </div>
+                <form action="https://formspree.io/f/xoqbjrow"
+                method="POST">
+                    <h3>Feedback form</h3>
+
+                    <div class="form-group3">
+                        <label>How do you rate your all over experiance</label>
+                        
+                    </div>
+                    <div class="form-group3">
+                        <input type="radio" name="rate" value="bad">Bad
+                        <input type="radio" name="rate" value="average">Average
+                        <input type="radio" name="rate" value="good">good
+                        <input type="radio" name="rate" value="excellent">Excellent
+                    </div><br>
+                    <div class="form-wrapper3">
+                      <label>Full Name*</label>
+                        <br>
+                        <input type="text" name="fullname" placeholder="Enter your name">
+                        
+                    </div><br>
+                    <div class="form-wrapper3">
+                      <label>Email id*</label>
+                        <br>
+                        <input type="email" name="mail" placeholder="Enter mail id">
+                    </div><br>
+                    <div class="form-wrapper3">
+                      <label>Age*</label>
+                      <br>
+                      <input type="text" name="age" placeholder="Enter your age">
+                    </div><br>
+                    <div class="form-wrapper3">
+                      <label>phone number*</label>
+                        <br>
+                        <input type="text" name="mobile" placeholder="Enter mobile number">
+                    </div><br>
+                    <div class="form-wrapper3">
+                      <label>Date*</label>
+                      <br>
+                      <input type="date" name="dateofbirth" placeholder="DOB">
+                    </div><br>
+                   <div class="form-wrapper3">
+                    <label>Comment</label>
+                        <br>
+                        <textarea>
+
+                        </textarea>
+                   </div>
+                   <div class="b">
+                    <button onclick="register();">
+                      Submit
+                     </button>
+
+                   </div>
+                  
+                   
+                   
+    
+                </form>
+                
+            </div>
+            
+          </div>
+
+      </section>
+      <script>
+        var navLinks=document.getElementById("navLinks");
+        function showMenu(){
+          navLinks.style.right="0";
+      
+        }
+        function hideMenu(){
+          navLinks.style.right="-200px";
+          
+        }
+        function register() {
+        alert(`Your feedback is succesfully submitted`);
+      }
+      </script>
+</body>
+</html>
